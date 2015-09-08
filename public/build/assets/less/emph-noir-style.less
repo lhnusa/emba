@@ -1,0 +1,59 @@
+@import 'prefixer.less';
+
+/* 1st load emphyny global theme */
+@import 'emph-global-style.less';
+
+
+/* 2nd tweak theme's mixins & variables */
+@body_background: #000;
+@body_color: #eee;
+
+@headings_color: #444;
+
+@header_background: #191919; 
+@header_border_bottom_color: rgba(0,0,0,0.1);
+
+@emph-main-nav_li_a_color: #fff;
+@emph-main-nav_li_a_hover_color: #bbb;
+
+@emph-footer_background:#161616;
+@footer-logo_color: #fff;
+@emph-footer-nav_li_a_color: #fff;
+@emph-footer-nav_li_a_hover_color: #bbb;
+
+/* Theme Var */
+@accent_color: #49d7d1;
+
+
+/* Customized Classes */
+#emph-header {
+	.emph-header-border{ height: 0; }
+}
+#highlight-hero-brand { padding: 10px 0; }
+.techgenius-hero-holder {
+	background: url('../img/techgenius/map-pattern-bg.jpg') repeat center top;
+}
+.techgenius-landing-page {
+	background: url('../img/techgenius/tg-main-content-bg.jpg') no-repeat center top #000; border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#highlight-stripe { 
+	padding: 30px 0; 
+	.title { color: @accent_color !important; font-weight: 500; text-shadow: none; }
+	.desc { padding: 10px; }
+}
+.highlight-block { padding: 40px 0; }
+#highlight-content {
+	.title { color: @accent_color !important; font-weight: 500; text-shadow: none; }
+	.desc { padding: 10px; }
+	.tg-dates-holder {
+		padding: 10px; margin: 10px auto; text-align: center; .border-radius(3px); background: #161616; background: -moz-linear-gradient(-45deg,  #161616 0%, #2e2d2d 100%); background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#161616), color-stop(100%,#2e2d2d)); background: -webkit-linear-gradient(-45deg,  #161616 0%,#2e2d2d 100%); background: -o-linear-gradient(-45deg,  #161616 0%,#2e2d2d 100%); background: -ms-linear-gradient(-45deg,  #161616 0%,#2e2d2d 100%); background: linear-gradient(135deg,  #161616 0%,#2e2d2d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#2e2d2d',GradientType=1 );
+		.country { padding-bottom: 0; margin-bottom: 0; color: #fff; text-transform: uppercase; font-size: 12px; font-weight: 300; letter-spacing: 3px; }
+		.city { padding: 0; margin: 0; color: @accent_color; text-transform: uppercase; font-size: 34px; }
+		.date { padding-bottom: 0; margin-bottom: 0; color: #aaa; text-transform: uppercase; font-size: 16px; font-weight: 500; }
+	}
+}
+
+
+
